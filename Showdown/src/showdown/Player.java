@@ -6,10 +6,8 @@ public class Player {
 	private ArrayList<Card> deck;
 	private Card[] hand = new Card[6];
 	private creatureCard[] field = new creatureCard[7];
-	public Player(String name, ArrayList deck, Card[] hand, creatureCard[] field) {
+	public Player(String name, ArrayList deck) {
 		this.name = name;
 		this.deck = deck;
-		this.hand = hand;
-		this.field = field;
 	}
 }
