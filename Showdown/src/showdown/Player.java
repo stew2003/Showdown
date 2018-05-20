@@ -9,5 +9,11 @@ public class Player {
 	public Player(String name, ArrayList deck) {
 		this.name = name;
 		this.deck = deck;
+		//hand is first 6 cards from deck
+		//field is empty, fills when player plays something
 	}
+	
+	public static void turn() {
+	}
+	
 }
