@@ -7,7 +7,7 @@ public class creatureCard implements Card {
 	private int attackStat;
 	private creatureCard[] evolutionList;
 	private ElementalTypes elementalType;
-	creatureCard(int maxHP, int attackStat, ElementalTypes elementalType, creatureCard[] evolutionList){
+	public creatureCard(int maxHP, int attackStat, ElementalTypes elementalType, creatureCard[] evolutionList){
 		this.maxHP = maxHP;
 		this.attackStat = attackStat;
 		this.elementalType = elementalType;
