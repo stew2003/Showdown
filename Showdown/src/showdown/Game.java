@@ -1,4 +1,5 @@
 package showdown;
+//game class
 public class Game {
 	
 	public creatureCard createSalamander(){

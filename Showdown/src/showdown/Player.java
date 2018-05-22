@@ -1,7 +1,7 @@
 package showdown;
 import java.io.File;
 import java.util.ArrayList;
-
+//player class
 public class Player {
 	private String name;
 	private Deck deck;
