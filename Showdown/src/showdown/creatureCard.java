@@ -5,15 +5,26 @@ public class creatureCard implements Card {
 	private int maxHP;
 	private int currentHP;
 	private int attackStat;
-	private creatureCard[] evolutionList;
+	private String attackName;
+	private creatureCard evolution;
 	private ElementalTypes elementalType;
-	public creatureCard(int maxHP, int attackStat, ElementalTypes elementalType, creatureCard[] evolutionList){
+	private int age = 0;
+	public creatureCard(int maxHP, int attackStat, String attackName, ElementalTypes elementalType, creatureCard evolution) {
 		this.maxHP = maxHP;
 		this.attackStat = attackStat;
+		this.attackName = attackName;
 		this.elementalType = elementalType;
-		this.evolutionList = evolutionList;
+		this.evolution = evolution;
+		this.currentHP = maxHP;
 	}
-	public void play() {
+	public creatureCard(int maxHP, int attackStat, String attackName, ElementalTypes elementalType) {
+		this.maxHP = maxHP;
+		this.attackStat = attackStat;
+		this.attackName = attackName;
+		this.elementalType = elementalType;
+		this.currentHP = maxHP;
+	}
+	public void play(Game game) {
 		System.out.println("Hi");
 	}
 }
