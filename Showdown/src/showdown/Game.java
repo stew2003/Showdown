@@ -1,7 +1,6 @@
 package showdown;
 //game class
 public class Game {
-	
 	public creatureCard createSalamander(){
 		return new creatureCard(60, 20, "Ember", ElementalTypes.FIRE, createKomodoDragon());		
 	}
@@ -11,10 +10,13 @@ public class Game {
 	public creatureCard createDragon() {
 		return new creatureCard(120, 60, "Inferno", ElementalTypes.FIRE);
 	}
-	public static void main(String[] args) {
-		System.out.println("Hello, this is a github test.");
-		System.out.println("Hello, this is a your dad test ");
-		System.out.println("Hello, this is a your mom test ");
+	private Player player1;
+	private Player player2;
+	public Game(Player player1, Player player2) {
+		this.player1 = player1;
+		this.player2 = player2;
 	}
+	
+	
 
 }
