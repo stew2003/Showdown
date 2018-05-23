@@ -19,6 +19,7 @@ public class Player {
 			this.hand.add(this.deck.library.get(0));
 			this.deck.library.remove(0);
 		}
+	
 	}
 	
 	
