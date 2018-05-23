@@ -7,7 +7,7 @@ public class Game {
 		this.player1 = player1;
 		this.player2 = player2;
 	}
-	public boolean iOsver() {
+	public boolean isOver() {
 		if(player1.isDead() || player2.isDead()) {
 			return true;
 		}
