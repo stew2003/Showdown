@@ -17,12 +17,11 @@ public class Game {
 	}
 	public String whoDead() {
 		if(player1.isDead()) {
-			return "Player 1 is dead.";
+			return player1.getName();
 		}
-		else if(player2.isDead()) {
-			return "Player 2 is dead.";
+		else {
+			return player2.getName();
 		}
-		return null;
 	}
 
 }
